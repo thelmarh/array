@@ -1,0 +1,26 @@
+ALGORITHM distinc_array
+VAR
+ first_array: ARRAY_OF_INTEGER[N] 
+ second_array: ARRAY_OF_INTEGER[K] 
+ distinct_array: ARRAY_OF_INTEGER[O] 
+ distinct_sum: INTEGER =: 0
+BEGIN
+  Read(distinct_sum)
+
+  FOR i FROM 0 TO N STEP 1 DO 
+    IF (second_array.indexOf(second_array[K]) === -1)THEN
+      distinc_array.push(first_array[i]);
+      END_IF
+    END_FOR
+    FOR k FROM 0 TO K STEP 1 DO 
+      IF (first_array.indexOf(second_array[K]) ===-1) THEN 
+      distinc_array.push(second_array[K]);
+      END_IF
+    END_FOR 
+
+    FOR n FROM 0 TO 0 STEP 1 DO 
+      distinct_sum += distinc_array[n]
+    END_FOR
+
+  write(distinc_array)
+END
